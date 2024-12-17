@@ -1,0 +1,127 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  padding: 10px;
+  background: #fdf2f8;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffb3e6;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+}
+
+.card-registro {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+ion-card-title {
+  color: #ff69b4;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+ion-card-subtitle {
+  color: #bbbbbb;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+ion-input {
+  --color: #ffffff;
+  --placeholder-color: #bbbbbb;
+  font-size: 1em;
+}
+
+ion-icon {
+  color: #ffb3e6;
+  font-size: 1.2em;
+}
+
+.toggle-carga {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.spinner-label {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.button-group ion-button {
+  margin: 10px 0;
+  border-radius: 20px;
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+ion-button[color="danger"] {
+  --background: #ff69b4;
+  --color: #ffffff;
+}
+
+ion-button[color="danger"]:hover {
+  transform: scale(1.05);
+  background: #ff1493;
+}
+
+ion-button[color="secondary"] {
+  --background: #ffb3e6;
+  --color: #ffffff;
+}
+
+ion-button[color="secondary"]:hover {
+  transform: scale(1.05);
+  background: #ff69b4;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+ion-text a {
+  color: #ff69b4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ion-text a:hover {
+  color: #ff1493;
+  text-decoration: underline;
+}

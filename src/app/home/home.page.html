@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: 1.4em;">Registro de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="container" style="position: relative; height: 100%;">
+
+    <div class="logo-container">
+      <img src="./assets/img/logopink.jpg" alt="Logo" class="logo-img">
+    </div>
+
+    <ion-card class="card-registro">
+      <ion-card-header>
+        <ion-card-title>¡Bienvenido!</ion-card-title>
+        <ion-card-subtitle>Crea tu cuenta para empezar</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list>
+          <ion-item class="input-field">
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="user.username" placeholder="Usuario"></ion-input>
+          </ion-item>
+
+          <ion-item class="input-field">
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="user.password" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <div class="toggle-carga">
+          <ion-toggle justify="start" color="danger">Recordar</ion-toggle>
+          <ion-label *ngIf="spinner" class="spinner-label">Cargando...</ion-label>
+        </div>
+
+        <div class="button-group">
+          <ion-button expand="block" color="danger" shape="round" (click)="validar()">Iniciar Sesión</ion-button>
+          <ion-button expand="block" color="secondary" shape="round" [routerLink]="['/register']">Crear Cuenta</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="forgot-password">
+      <ion-text>
+        <a [routerLink]="['/recuperar']">¿Olvidaste tu contraseña?</a>
+      </ion-text>
+    </div>
+  </div>
+</ion-content>

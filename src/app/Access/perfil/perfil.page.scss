@@ -1,0 +1,88 @@
+#container {
+  text-align: center;
+  padding: 20px;
+}
+
+ion-card-title h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #c71585;
+  margin-bottom: 10px;
+}
+
+ion-card-subtitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #d87093;
+  margin-top: 10px;
+}
+
+ion-item {
+  margin-top: 10px;
+}
+
+ion-label {
+  color: #db7093;
+}
+
+ion-input {
+  --padding-start: 10px;
+  font-size: 1em;
+}
+
+ion-button[color="success"] {
+  margin-top: 20px;
+  height: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+  --background: #ff69b4;
+  --color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+ion-button[color="success"]:hover {
+  transform: scale(1.05);
+}
+
+ion-button[color="success"]:active {
+  transform: scale(0.95);
+}
+
+ion-menu::part(backdrop) {
+  background-color: rgba(255, 182, 193, 0.3);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 16px rgba(255, 182, 193, 0.3);
+}
+
+ion-item {
+  --color: #ffffff;
+  --background: transparent;
+}
+
+ion-item:hover {
+  --background: rgba(255, 182, 193, 0.2);
+}
+
+.ion-padding {
+  background-color: #ffe4e9;
+}
+
+ion-title {
+  color: #ff1493;
+}
+
+ion-card-title,
+ion-card-subtitle {
+  color: #ff1493;
+}
+
+ion-card {
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
